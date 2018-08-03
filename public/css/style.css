@@ -1,0 +1,96 @@
+html, body {
+    background-color: #fff;
+    color: #636b6f;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 100;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.full-height {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.comp_logo{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #636b6f;
+}
+.comp_logo h2{
+    padding: 2px 10px;
+    text-transform: uppercase;
+    display: none;
+}
+
+.main-nav,
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 0pc 15px;
+}
+
+.main-nav_links,
+footer>ul{
+    padding: 5px 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    list-style: none;
+}
+.main-nav_links a,
+footer>ul a{
+    padding: 5px 10px;
+}
+
+.content {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+}
+
+.title {
+    font-size: 84px;
+}
+
+.links > a {
+    color: #636b6f;
+    padding: 0 25px;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: .1rem;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.m-b-md {
+    margin-bottom: 30px;
+}
+
+footer{
+    padding: 20px 30px;
+    background-color: #636b6f;
+}
+footer>ul{
+    align-self: flex-end;
+    margin: 0;
+}
+footer a{
+    transition: 1s;
+    color: whitesmoke;
+}
+footer .comp_logo{
+    font-size: 0.7em;
+    color:white;
+}
+
+@media screen and (min-width: 640px){
+    .comp_logo h2{
+        display: inline;
+    }
+}
