@@ -10,7 +10,7 @@
         <a href="{{ url('/') }}">Pokemon</a>
         <a href="{{ route('types') }}">Types</a>
         <a href="http://es.pokemon.wikia.com/wiki/WikiDex">Pokemon Wiki</a>
-        <a href="https://github.com/laravel/laravel">GitHub</a>
+        <a href="https://github.com/laravel/laravel">Laravel</a>
     </div>
 </div>
 @endsection
