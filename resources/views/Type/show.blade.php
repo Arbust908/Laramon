@@ -2,16 +2,17 @@
 
 @section('content')
 <section class="types">
-  <a href="{{ url('/type/$type') }}">
-    <article class="type {{ $type->name }}">
-      <h3>{{ $type->name }}</h3>
+  <a href="{{ route('tipo',['tipo' => $tipo->id]) }}">
+  <article class="type" style="background-color:{{$tipo->color}}">
+      <h3>{{ $tipo->name }}</h3>
     </article>
   </a>
 </section>
 <section class="pokemon">
-  @foreach($pokemon as $poke)
-  <a href="{{ url('/') }}">
-    <article class="poke {{ $type->name }}">
+  @foreach($tipo->pokemon as $poke)
+  <a href="{{ route('pokemon.uno',['pokemon' => $poke->id]) }}">
+    <article class="poke {{ $tipo->name }}">
+    <img src="{{ asset('poke-img/images/poke-'.$poke->id.'.jpg') }}" alt="Icono de {{ $poke->name }}">
       <h3>{{ $poke->name }}</h3>
       <h4>{{ $poke->weight }}</h4>
       <h4>{{ $poke->height }}</h4>

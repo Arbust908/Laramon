@@ -12,7 +12,7 @@ class PokemonController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function todos() //Ver la lista de Pokémon
     {
         //
     }
@@ -22,7 +22,7 @@ class PokemonController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function create()
+    public function nuevo()// Agregar un nuevo Pokémon
     {
         //
     }
@@ -33,7 +33,7 @@ class PokemonController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function guardar(Request $request)// Agregar un nuevo Pokémon
     {
         //
     }
@@ -44,7 +44,7 @@ class PokemonController extends Controller
      * @param  \App\Pokemon  $pokemon
      * @return \Illuminate\Http\Response
      */
-    public function show(Pokemon $pokemon)
+    public function uno(Pokemon $pokemon) //Ver el detalle de un Pokémon
     {
         //
     }
@@ -55,7 +55,7 @@ class PokemonController extends Controller
      * @param  \App\Pokemon  $pokemon
      * @return \Illuminate\Http\Response
      */
-    public function edit(Pokemon $pokemon)
+    public function editar(Pokemon $pokemon)// Modificar un Pokémon
     {
         //
     }
@@ -67,7 +67,7 @@ class PokemonController extends Controller
      * @param  \App\Pokemon  $pokemon
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Pokemon $pokemon)
+    public function actualizar(Request $request, Pokemon $pokemon)// Modificar un Pokémon
     {
         //
     }
@@ -78,7 +78,7 @@ class PokemonController extends Controller
      * @param  \App\Pokemon  $pokemon
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Pokemon $pokemon)
+    public function borrar(Pokemon $pokemon)//Eliminar un Pokémon
     {
         //
     }

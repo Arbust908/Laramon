@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 
 class WebController extends Controller
 {
-    public function home(){
+    public function inicio(){
         return view('welcome');
     }
 }

@@ -11,18 +11,17 @@
 |
 */
 
-Route::get('/', 'WebController@home');
+Route::get('/', 'WebController@inicio')->name('inicio');
 
 Route::prefix('pokemon')->name('pokemon.')->group(function () {
-    Route::get('/','Pokemon@index')->name('pokemons');
-    Route::get('/new','Pokemon@create')->name('newpokemon');
-    Route::post('/','Pokemon@store')->name('storepokemon');
-    Route::get('/{pokemon}','Pokemon@show')->name('pokemon');
-    Route::get('/{pokemon}/edit','Pokemon@edit')->name('editpokemon');
-    Route::put('/{pokemon}','Pokemon@update')->name('updatepokemon');
-    Route::delete('/{pokemon}','Pokemon@desroyt')->name('deletepokemon');
-
+    Route::get('/','Pokemon@todos')->name('todos');
+    Route::get('/nuevo','Pokemon@nuevo')->name('nuevo');
+    Route::post('/','Pokemon@guardar')->name('guardar');
+    Route::get('/{pokemon}','Pokemon@uno')->name('uno');
+    Route::get('/{pokemon}/editar','Pokemon@editar')->name('editar');
+    Route::put('/{pokemon}', 'Pokemon@actualizar')->name('actualizar');
+    Route::delete('/{pokemon}', 'Pokemon@borrar')->name('borrar');
 });
 
-Route::get('/type','TypeController@index')->name('types');
-Route::get('/type/{type}','TypeController@show')->name('type');
+Route::get('/type','TypeController@todos')->name('tipos');
+Route::get('/type/{tipo}', 'TypeController@uno')->name('tipo');

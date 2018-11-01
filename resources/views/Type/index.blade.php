@@ -2,10 +2,10 @@
 
 @section('content')
 <section class="types">
-  @foreach($types as $types)
-    <a href="{{ url('/type/$type') }}">
-      <article class="type {{ $type->name }}">
-        <h3>{{ $type->name }}</h3>
+  @foreach($tipos as $tipo)
+    <a href="{{ route('tipo',['tipo'=>$tipo->id]) }}">
+      <article class="type" style="background-color:{{ $tipo->color }}">
+        <h3>{{ $tipo->name }}</h3>
       </article>
     </a>
   @endforeach

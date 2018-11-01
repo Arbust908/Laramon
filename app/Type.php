@@ -8,6 +8,6 @@ use App\Pokemon;
 class Type extends Model
 {
     public function pokemon(){
-        return $this->belongsToMany('Pokemon');
+        return $this->hasMany(Pokemon::class);
     }
 }

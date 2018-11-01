@@ -11,12 +11,12 @@
     <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
 
     <!-- Styles -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="{{asset('css/style.css')}}">
 </head>
 <body>
   <div class="full-height">
     <nav class="main-nav">
-      @logo(['url' => '{{ route("home") }}'])
+      @logo(['url' => '{{ route("indice") }}'])
         Laramon
       @endlogo
       <ul class="main-nav_links">
@@ -31,7 +31,7 @@
       @yield('content')
     </main>
     <footer>
-      @logo(['url' => '{{ route("home") }}'])
+      @logo(['url' => '{{ route("indice") }}'])
         Laramon
       @endlogo
       <ul>

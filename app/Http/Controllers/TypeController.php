@@ -12,11 +12,11 @@ class TypeController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function todos()
     {
-        $types = Type::All();
+        $tipos = Type::All();
 
-        return view('Type.index', compact('types'));
+        return view('Type.index', compact('tipos'));
     }
 
     /**
@@ -25,11 +25,10 @@ class TypeController extends Controller
      * @param  \App\Type  $type
      * @return \Illuminate\Http\Response
      */
-    public function show(Type $type)
+    public function uno(Type $tipo)
     {
         /* $pokemons = $type->pokemon(); */
-
-        return view('Type.show',compact('type'));
+        return view('Type.show')->with('tipo',$tipo);
     }
 
 }
