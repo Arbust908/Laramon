@@ -8,11 +8,11 @@
 
 + Se pide que se cree las rutas, vistas y controladores necesarios para que el usuario pueda:
 
-++ Ver la lista de Pokémon
-++ Ver el detalle de un Pokémon
-++ Eliminar un Pokémon
-++ Modificar un Pokémon
-++ Agregar un nuevo Pokémon
+  * Ver la lista de Pokémon
+  * Ver el detalle de un Pokémon
+  * Eliminar un Pokémon
+  * Modificar un Pokémon
+  * Agregar un nuevo Pokémon
 
 _(Realizar mínimo 3 de los 5 ítems)_
 
