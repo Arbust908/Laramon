@@ -15,7 +15,9 @@
   * Agregar un nuevo Pokémon
 
 _(Realizar mínimo 3 de los 5 ítems)_
+
 **Al momento de listar Pokémon o mostrar el detalle del Pokémon se debe también mostrar el tipo de Pokémon.**
+
 **Al momento de ver el detalle mostrar en que pokémon evoluciona, si es que evoluciona**
 
 
