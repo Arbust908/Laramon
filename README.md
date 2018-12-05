@@ -15,9 +15,11 @@
   * Agregar un nuevo Pokémon
 
 _(Realizar mínimo 3 de los 5 ítems)_
-
 **Al momento de listar Pokémon o mostrar el detalle del Pokémon se debe también mostrar el tipo de Pokémon.**
+**Al momento de ver el detalle mostrar en que pokémon evoluciona, si es que evoluciona**
 
+
+### Opcionales
 + Dado que la forma correcta de nombrar Pokémon en plural es “Pokémon” (sin s al final), corregir el nombre de la tabla y el modelo correspondiente para que nuestra aplicación continúe funcionando.
 
 + Modelar el sistema para que un Pokémon pueda pertenecer a más de un tipo de elemento.
